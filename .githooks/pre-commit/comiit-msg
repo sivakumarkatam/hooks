@@ -2,7 +2,7 @@
 
 import sys
 
-path = sys.argv[1]
+path = sys.argv[0]
 print "path is " + path
 
 with open(path) as f:
