@@ -14,7 +14,7 @@ error_msg="Aborting commit. Your commit message is missing either a JIRA Issue (
 #message=$(git log 0 HEAD --pretty=format:%s)
 
 #if ! grep -iqE "$commit_regex" "$message"; then
-if [ "$commit_regex" != "$()" ]; then
+if [ "$commit_regex" == "$()" ]; then
 echo "$()"
 
     echo "$error_msg" >&2
